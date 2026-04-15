@@ -2,9 +2,10 @@ import { useState } from 'react'
 import Sidebar from './components/Sidebar'
 import Home from './pages/Home'
 import ToolA from './pages/ToolA'
+import ToolB from './pages/ToolB'
 import './App.css'
 
-type Page = 'home' | 'tool-a'
+type Page = 'home' | 'tool-a' | 'tool-b'
 
 function App() {
   const [currentPage, setCurrentPage] = useState<Page>('home')
@@ -15,6 +16,7 @@ function App() {
       <main className="main-content">
         {currentPage === 'home' && <Home />}
         {currentPage === 'tool-a' && <ToolA />}
+        {currentPage === 'tool-b' && <ToolB />}
       </main>
     </div>
   )

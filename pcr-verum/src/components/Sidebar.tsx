@@ -1,6 +1,6 @@
 import './Sidebar.css'
 
-type Page = 'home' | 'tool-a'
+type Page = 'home' | 'tool-a' | 'tool-b'
 
 interface SidebarProps {
   currentPage: Page
@@ -25,6 +25,12 @@ export default function Sidebar({ currentPage, onNavigate }: SidebarProps) {
           onClick={() => onNavigate('tool-a')}
         >
           Tool A
+        </button>
+        <button
+          className={`nav-item ${currentPage === 'tool-b' ? 'active' : ''}`}
+          onClick={() => onNavigate('tool-b')}
+        >
+          Tool B
         </button>
       </nav>
     </aside>
