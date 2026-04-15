@@ -10,3 +10,41 @@
   color: #666666;
   margin: 0;
 }
+
+.tool-b-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 320px;
+  margin-top: 20px;
+}
+
+.tool-b-form input[type="text"] {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid #d0d0d0;
+  border-radius: 6px;
+  outline: none;
+  background: #ffffff;
+}
+
+.tool-b-form input[type="text"]:focus {
+  border-color: #888888;
+}
+
+.tool-b-form button[type="submit"] {
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #111111;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: background-color 0.15s;
+}
+
+.tool-b-form button[type="submit"]:hover {
+  background-color: #333333;
+}
