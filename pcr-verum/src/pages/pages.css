@@ -1,0 +1,12 @@
+.page h1 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #111111;
+  margin: 0 0 12px;
+}
+
+.page p {
+  font-size: 15px;
+  color: #666666;
+  margin: 0;
+}
